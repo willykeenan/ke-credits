@@ -2,6 +2,10 @@
 
 A prepaid-credits ledger for AI products. You run it in your own Postgres. Customers buy credit packs through Stripe Checkout. Your product spends those credits inside the same database transaction as the work, so a balance cannot go below zero, even under concurrent requests. Refunds and lost disputes claw credits back. Every operation is idempotent: a retried request with the same inputs replays its stored result.
 
+![Output of examples/demo.ts on a real Postgres engine: a signed Stripe purchase, a spend, an idempotent retry, a refused overdraft, a refund and a 50% clawback](docs/images/demo.png)
+
+<sub>Real output of `npx tsx examples/demo.ts`.</sub>
+
 KE Credits is a library. It is not a hosted service. It holds no money. It records closed-loop, non-cash credits for an operator's own services.
 
 ## Status and limitations
