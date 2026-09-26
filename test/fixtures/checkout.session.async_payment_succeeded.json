@@ -1,0 +1,21 @@
+{
+  "id": "evt_test_checkout_async_paid_1",
+  "object": "event",
+  "type": "checkout.session.async_payment_succeeded",
+  "data": {
+    "object": {
+      "id": "cs_test_ke_credits_1",
+      "object": "checkout.session",
+      "mode": "payment",
+      "payment_status": "paid",
+      "amount_total": 2000,
+      "currency": "usd",
+      "client_reference_id": "acct_user_1",
+      "payment_intent": "pi_test_ke_credits_1",
+      "metadata": {
+        "ke_credits_pack": "pack_a",
+        "ke_credits_account": "acct_user_1"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "evt_test_customer_updated_1",
+  "object": "event",
+  "type": "customer.updated",
+  "data": {
+    "object": {
+      "id": "cus_test_ke_credits_1",
+      "object": "customer",
+      "email": "buyer@example.test"
+    }
+  }
+}

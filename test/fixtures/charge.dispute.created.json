@@ -1,0 +1,32 @@
+{
+  "id": "evt_test_dispute_created_1",
+  "object": "event",
+  "type": "charge.dispute.created",
+  "data": {
+    "object": {
+      "id": "dp_test_ke_credits_1",
+      "object": "dispute",
+      "amount": 2000,
+      "currency": "usd",
+      "reason": "fraudulent",
+      "status": "needs_response",
+      "payment_intent": "pi_test_ke_credits_1",
+      "charge": {
+        "id": "ch_test_ke_credits_1",
+        "object": "charge",
+        "amount": 2000,
+        "amount_refunded": 0,
+        "currency": "usd",
+        "payment_intent": "pi_test_ke_credits_1",
+        "metadata": {
+          "ke_credits_pack": "pack_a",
+          "ke_credits_account": "acct_user_1"
+        }
+      },
+      "metadata": {
+        "ke_credits_pack": "pack_a",
+        "ke_credits_account": "acct_user_1"
+      }
+    }
+  }
+}

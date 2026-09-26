@@ -1,0 +1,21 @@
+{
+  "id": "evt_test_charge_refunded_partial_1",
+  "object": "event",
+  "type": "charge.refunded",
+  "data": {
+    "object": {
+      "id": "ch_test_ke_credits_1",
+      "object": "charge",
+      "amount": 2000,
+      "amount_refunded": 1000,
+      "currency": "usd",
+      "paid": true,
+      "refunded": false,
+      "payment_intent": "pi_test_ke_credits_1",
+      "metadata": {
+        "ke_credits_pack": "pack_a",
+        "ke_credits_account": "acct_user_1"
+      }
+    }
+  }
+}

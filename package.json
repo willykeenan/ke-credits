@@ -1,0 +1,50 @@
+{
+  "name": "ke-credits",
+  "version": "0.1.0",
+  "description": "Prepaid credits ledger for AI products: Postgres, append-only, idempotent, refund- and dispute-aware, with a Stripe top-up adapter that defaults to test mode.",
+  "license": "Apache-2.0",
+  "author": "KE Studios",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "sql",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willykeenan/ke-credits.git"
+  },
+  "homepage": "https://github.com/willykeenan/ke-credits#readme",
+  "bugs": {
+    "url": "https://github.com/willykeenan/ke-credits/issues"
+  },
+  "keywords": [
+    "credits",
+    "prepaid",
+    "ledger",
+    "postgres",
+    "stripe",
+    "billing",
+    "ai",
+    "idempotent"
+  ]
+}
